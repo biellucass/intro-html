@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04 - image</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(66, 158, 192);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com imagens</h1>
+    <hr>
+
+    <p>Trabalhando com o elemento de &lt; img&gt;</p>
+    <img src="snow-image.jpg" alt="Linda imagem da neve com uma cabana vermelha" width="300" height="300">
+
+    <p> Entendendo os atributos </p>
+    <ul>
+        <li><strong> src </strong>: Source/fonte: É o caminho onde a imagem está hospedada/armazenada. Pode ser um caminho local ou um link direto da internet. </li>
+        <li><strong> alt </strong>: alt/alternative. É uma breve descrição da imagem. É crucial para <strong>Acessibilidade</strong> e como fallback(plano B).</li>
+    </ul>
+
+    <h2> Trabalhando com recursos externos </h2>
+    <img src="https://images.unsplash.com/photo-1789742203815-e98da1562329?q=80&w=669&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Carro clássico preto a circular numa rua urbana em frente ao estabelecimento Tempo Cafe, com edifícios altos em fundo." width="300">
+
+    <h2> Outras abordagens </h2>
+    <h3> Elemento figure </h3>
+    <figure>
+        <img src="https://images.unsplash.com/photo-1789898418533-18e26f125abd?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Vela branca acesa com uma chama brilhante e alta sobre um fundo escuro." width="300">
+
+        <figcaption> Vela branca com uma chama brilhante </figcaption>
+    </figure>
+
+    <h3> Elemento picture </h3>
+    <p> Utilizamos o elemento  &lt;picuture&gt; para controlarmos qual arquivo será utilizado de acordo com determinadas condições.</p>
+
+    <picture>
+        <source media="(max-width: 600px)" srcset="https://unsplash.com/pt-br/fotografias/um-pequeno-passaro-pousa-pacificamente-em-uma-mao-RUiA1pRVF6k"
+        >
+        <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1505729183959-00bde5f2ecbb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFzc2FyaW5ob3xlbnwwfHwwfHx8MA%3D%3D">
+
+        <!-- img como fallback(plano B) - Caso não seja possível utilizar alguma imagem configurada no source acima, o navegador entrega a imagem do img. -->
+        <img src="https://images.unsplash.com/photo-1505729183959-00bde5f2ecbb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFzc2FyaW5ob3xlbnwwfHwwfHx8MA%3D%3D" alt="Bela imagem de um passarinho">
+    </picture>
+
+    <hr>
+    <h2> Sobre os tipos de imagens </h2>
+    <p> Você pode encontrar um acervo muito grande de tipos de imagens. A escolha da imagem certa pode elevar a performance do seu site. Veja a lista abaixo:</p>
+    <ul>
+        <li> <strong> JPEG/JPG </strong>: Bom para fotografias, produtos fotografados, imagens com muitas cores e detalhes. Se você tentar otimizar demais, a perda de qualidade se torna visível. </li>
+
+        <li> <strong> PNG </strong>: Suporta transparência e é muito bom para imagens que precisam preservar certos detalhes, como por exemplo: logos, imagens que precisam de transparência e etc.
+        </li>
+
+        <li> <strong> WEBP </strong>: Formato recente desenvolvido com foco na Web. Além de também suportar transparência, também consegue trabalhar com imagens em alta definição. Excelente escolha para fotografias, imagens de produtos, imagens com transparêcia e imagens gerais.</li>
+
+        <li> <strong> AVIF </strong>: É um formato maus recente e também muito eficiente. É execelente, para fotografias, imagens grandes, sites onde desempenho e economia de dados são extrmamente importantes. </li>
+        
+        <li> <strong> SVG </strong>: É um elemento vetorial, excelente para logos, ícones, simbolos e etc.</li>
+    </ul>
+
+
+
+
+
+</body>
+</html>

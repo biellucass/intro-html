@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sobre estrutura semântica | HTML </title>
+    <style>
+        body{
+            background-color: #191945;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            margin: auto;
+        }
+
+        header{
+            background-color: #1D1D1D;
+        }
+
+        section{
+            border: 4px solid greenyellow;
+            background-color: deeppink;
+            padding: 20px;
+        }
+
+        footer{
+            background-color: tan;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header - representa o cabeçalho de uma página ou de uma seção -->
+    <header> 
+        <h1> GL </h1>
+        <!-- nav/navigation - representa uma área de navegação -->
+        <nav>
+            <!-- agrupamos os itens de navegação dentro de uma lista por conta de acessibilidade. -->
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+           
+        </nav>
+
+    </header>
+
+    <!-- main/principal - representa conteúdo principal da página. Uma página deve ter apenas UM CONTEÚDO PRINCIPAL. -->
+    <main>
+        <!-- section/seção - representa uma SEÇÃO TEMÁTICA DE CONTEÚDO. -->
+        <section>  
+            <h2>Projetos</h2>
+
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis, incidunt. Eaque sit ducimus consectetur autem aperiam maiores ex accusantium? Modi sunt delectus facilis inventore ullam consequuntur voluptatum temporibus quisquam ratione? </p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi maiores numquam quod molestiae provident ea laborum dolorum vitae rerum assumenda, minus, inventore officiis placeat nemo incidunt vero tempora consequatur quisquam!</p>
+        </section>
+
+        <section>
+            <h2> Contato </h2>
+            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum minima, delectus architecto expedita consequatur veniam eos optio, voluptates nemo et debitis vero fugit assumenda aut tempore, ipsum error quis odit! </p>
+
+            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto dolores vitae sequi corrupti totam eveniet doloremque ex quae, quasi odio eaque laudantium iure minus assumenda neque, nam nesciunt illum unde? </p>
+        </section>
+
+        <section>
+            <h2>  Últimos artigos  </h2>
+
+            <!-- article/artigo - representa um conteúdo que faz sentido de maneira independente. -->
+            <article> 
+                <h3> Aprendendo HTML </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nam quisquam ut repudiandae delectus nulla illum fugiat natus quis omnis! Perferendis temporibus ullam voluptates aut perspiciatis repudiandae a dolores sequi. </p>
+            </article>
+            
+            <article>
+                <h3> Aprendendo CSS </h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem blanditiis soluta libero numquam commodi, eligendi culpa repudiandae, animi dolor explicabo nam a architecto! In delectus iste fuga aliquam, nesciunt modi?</p>
+            </article>
+
+            <article>
+                <h3>Aprendendo JS</h3>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde vitae fuga repellendus minima minus qui aperiam, voluptatibus expedita voluptates at asperiores quos. Inventore voluptatem molestiae blanditiis rerum nobis voluptatum perspiciatis!
+            </article>
+        </section>
+
+        <!-- aside - representa conteúdo relacionado, mas não essencial ao conteúdo principal -->
+        <aside>             
+            <h2> Artigos relacionados </h2>
+            <nav>
+                <ul>
+                    <li><a href="aprenda-java-html">Aprenda Java</a></li>
+                    <li><a href="">Domine React</a></li>
+                    <li><a href="">Explore Ux e UI</a></li>
+                </ul>
+            </nav>
+
+            <article>
+                <header>
+                    <h3>Meu artigo</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ipsum, distinctio neque quisquam hic corporis nostrum possimus fuga totam facere officia delectus unde fugit laboriosam quaerat perspiciatis deleniti iusto! Accusantium?</p>
+
+                    <footer>
+                        <p>Publicado por Bielzoka</p>
+                    </footer>
+                </header>
+            </article>
+        </aside>
+    </main>
+
+    <!--  footer - representa o rodapé de uma página ou seção -->
+    <footer>
+        <p>© 2026 Gabriel Lucas. Todos os direitos reservados.</p>
+
+        <address>
+            <a href="mailto:biellucass102@gmail.com">E-mail: biellucass102@gmail.com</a>
+            <a href="tel+5511961159328">Tel:(11) 9 96115-9328</a>
+
+            <p> Rua Ali, Número 19 - São Paulo - SP </p>
+
+        </address>
+
+        <nav>
+            <ul>
+                <li><a href="\"></a>Página Imicial</li>   
+                <li><a href="\"></a>Página de carreiras</li> 
+                <li><a href="\"></a>Sobre a Empresa</li> 
+                <li><a href="\"></a>Termos e privacidade</li>                              
+            </ul>
+        </nav>
+
+    </footer>
+   
+</body>
+</html>

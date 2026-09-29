@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site sobre elemento Iframe. Inlaine Frame para embutir outros sites.">
+    <title>05 - Iframes | HTML</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iframe</h1>
+    <hr>
+
+    <h2>Para que serve?</h2>
+    <p> O Inline Frame é um elemento que nos permite embutir outro documento ou contéudo externo dentro da nossa página. é bastante usado para Youtube, Google, Maps, formulários externos e etc.</p>
+
+    <h3> Exemplo básico de Iframe </h3>
+
+    <iframe src="04-image.html" frameborder="0" width="500px" height="500px"></iframe>
+    <hr>
+
+    <h3>Carregando o YouTube</h3>
+
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/299PL3Wqlmw?si=RESTYI8f1XhZu3dX" title="YouTube video player COM O VÍDEO SOBRE COMO USAR A PALAVRA EVEN EM INGLÊS." 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"  
+        allowfullscreen>
+    </iframe>
+    <hr>
+
+    <h3> Carregando Maps</h3>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d228.69713554061263!2d-46.687450446178325!3d-23.49095588655803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1790166774726!5m2!1spt-BR!2sbr" width="600" 
+    height="450" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    <hr>
+
+    <iframe src="" frameborder="0"></iframe>
+    
+</body>
+</html>

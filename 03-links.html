@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 - Links</title>
+    <style>
+        body {
+            background-color: rgb(136, 171, 171);
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Sobre o elemento de âncora</h1>
+    <hr>
+
+    <h2>Conhecendo o elemento de âncora</h2>
+    <p>Para navegar na internet utilizamos um elemento chamdo de <strong>"a"</strong> (anchor/âncora).</p>
+
+    <p>Criando o elemento de navegação</p>
+
+    <!-- href/hyperlink reference = referêrencia de hipertexto -->
+    <a href="https://google.com">aperte aqui para acessar o google</a>
+
+    <hr>
+    <h2>Explorando mais conceitos</h2>
+    <h3>link interno</h3>
+    <a href="02-listas.html">Visite o site de listas</a>
+    
+    <h3>Link externo</h3>
+    <a href="https://instagram.com" target="_blank">Acessar recurso</a>
+
+    <p> utilizamos o atributo chamado de target. Esse atributo serve para indicar onde o link configurado href será aberto. </p>
+    <p> Algumas opções de target: </p>
+
+    <ul>
+        <li> <strong> _blank </strong>: abre o link em uma nova aba/janela. </li>
+        <li> <strong> _self </strong>: abre na mesma aba. É a configuração padrão. </li>
+        <li> <strong> _parent </strong>: abre no contexto pai, usado com iframe.</li>
+        <li> <strong> _top</strong>: abre no contexto mais externo também com iframe. </li>
+    </ul>
+
+    <h3> Link para email </h3>
+    <p> Também é possivel configurar o elemento &lt;a&gt; para abrir o aplicativo de email do usúario. </p>
+    <a href="https://symbl.cc/pt/html-entities/" target="_blank">Link para as identidades</a>
+
+    <a href="mailto:biellucass102@gmail.com">biellucass102@gmail.com</a>
+
+    <h3> Link para telefone </h3>
+    <p> Também é possivel configurar o elemento &lt; a &gt; para abrir o aplicativo de discagem de contato.</p>
+    <a href="tel:+5511961159328">Entre em conraro pelo número: (11) 96115-9328</a>
+
+    <h3> Link para download </h3>
+    <a href="02-listas.html" download> Baixe o arquivo de listas </a>
+    
+    
+    <p> Podemos também, indicar o nome do arquivo configurando atributo de download. </p>
+    <a href="02-listas.html" download="listas"> Baixe o arquivo de listas </a>
+
+    
+</body>
+</html>
+http://192.168.15.12:5500/03-links.html
